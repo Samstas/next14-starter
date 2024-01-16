@@ -1,10 +1,13 @@
 import Links from "./links/Links";
+import Link from "next/link";
 import styles from "./Navbar.module.scss";
 
 function Navbar() {
   return (
     <nav className={styles.container}>
-      <div className={styles.logo}>logo&rarr;</div>
+      <Link href="/" className={styles.logo}>
+        logo&rarr;
+      </Link>
       <Links />
     </nav>
   );
